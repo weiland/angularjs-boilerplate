@@ -1,0 +1,14 @@
+{
+  "name": "webapp",
+  "version": "0.0.1",
+  "authors": [
+    "Pascal Weiland <pascal@seehin.de>"
+  ],
+  "description": "html boilerplate",
+  "license": "MIT",
+  "private": true,
+  "ignore": [],
+  "dependencies": {
+    "foundation": "zurb/bower-foundation#~5.4.6"
+  }
+}

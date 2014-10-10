@@ -4,7 +4,7 @@ ignore-*
 .sass-cache
 
 app/libs
-app/dist
+app/dist/
 
 .DS_Store
 .AppleDouble

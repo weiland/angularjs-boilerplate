@@ -3,21 +3,25 @@
 Simple Frontend HTML5 Boilerplate with main focus
 on angular.js, ember.js and ampersand.js.
 
+This project is still in beta!
+
 (and it follows an entire novel! :scream: )
 
-### Requires
+### Requirements
 - gulp `npm install -g gulp` (a globally installed gulp is always good)
 - bower (and this time it is not looking for women (ok, only german people will get this.. hopefully))
-- browserify
+- browserify (not yet)
 - phantomjs (karma jasmine tests) `brew install phantomjs`
 - ruby sass (rbenv || rvm) && `gem install sass`
 
 ### Getting started
-- clone this repository `git clone git://git@github.com/weiland/webapp-boilerplate`
-- or run `git init && git remote add boilerplate && git pull boilerplate master`
-- adjust names
-- `gulp server` will serve dist/ as static content via express
-- `gulp` will run the server, watch your files, compile and update the dist/ and tiny-lr will update your browser
+- clone this repository `git clone git@github.com:weiland/webapp-boilerplate.git && cd webapp-boilerplate && npm install && bower install`
+- run `gulp` 
+
+- Alternatively run `git remote add boilerplate && git pull boilerplate master` (when using the repository as parent/boilerplate)
+- adjust names (package.json, README.md)
+- `gulp server`  only serves dist/ as static content via express
+- `gulp`  runs the server, watches your files, compiles and updates the dist/ and tiny-lr will update your browser
 - all your app stuff is in the app/ directory. if you place it there.
 
 ### Main Todos / Ideas
@@ -34,6 +38,7 @@ on angular.js, ember.js and ampersand.js.
     + couchdb (puchdb), mongoose, localforage
 
 ### TODO Gulp
+- [ ] open `0.0.0.0:4200` in the browser
 - [x] add tiny-lr with express to run app with tiny-lr
 - [x] use gulp-ruby-sass (even though it's slower than gulp-sass) for sass (i mean the .scss not the lovely indented sass syntax) + autoprefixer
 - [ ] gulp-livereload also for views

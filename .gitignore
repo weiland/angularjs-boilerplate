@@ -2,7 +2,9 @@ node_modules
 ignore-*
 .tmp
 .sass-cache
+
 app/libs
+app/dist
 
 .DS_Store
 .AppleDouble

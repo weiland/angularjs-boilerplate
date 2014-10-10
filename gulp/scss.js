@@ -5,7 +5,7 @@ var reload = require('gulp-livereload');
 
 module.exports = function() {
 
-  return gulp.src('app/src/scss/app.scss')
+  return gulp.src(['app/libs/foundation/scss/foundation.scss', 'app/src/scss/app.scss'])
     .pipe(plumber())
     .pipe(sass({unixNewlines: true}))
     .on('error', function (err) { console.log(err.message); })

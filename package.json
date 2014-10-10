@@ -10,7 +10,6 @@
   "author": "Pascal Weiland",
   "license": "MIT",
   "scripts": {
-    "build": "gulp build",
     "test": "gulp test"
   },
   "engines": {

@@ -36,8 +36,8 @@ on angular.js, ember.js and ampersand.js.
 ### TODO Gulp
 - [x] add tiny-lr with express to run app with tiny-lr
 - [x] use gulp-ruby-sass (even though it's slower than gulp-sass) for sass (i mean the .scss not the lovely indented sass syntax) + autoprefixer
-- gulp-livereload also for views
-- gulp-newer for images (dont wanna redo images) + gulp-imagemin
+- [ ] gulp-livereload also for views
+- [ ] gulp-newer for images (dont wanna redo images) + gulp-imagemin
 - [x] move only html/markup task
 - [x] move js (and perhaps concat some stuff if there's no deferred loading)
 - [ ] or use browserify

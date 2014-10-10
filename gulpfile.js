@@ -16,13 +16,6 @@ gulp.task('cp', cp);
 gulp.task('html', html);
 gulp.task('watchdoges', watchdoges);
 
-gulp.task('build', [
-  'js',
-  'cp',
-  'scss',
-  'html'
-]);
-
 gulp.task('default', [
   'server',
   'js',

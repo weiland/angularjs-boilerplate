@@ -10,15 +10,14 @@
   "author": "Pascal Weiland",
   "license": "MIT",
   "scripts": {
+    "build": "gulp build"
     "test": "gulp test"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "devDependencies": {
-    "bower": "^1.3.12",
     "browser-sync": "^1.5.7",
-    "del": "^0.1.3",
     "gulp": "^3.8.8",
     "gulp-newer": "^0.3.0",
     "gulp-plumber": "^0.6.6",

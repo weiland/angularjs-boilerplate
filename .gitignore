@@ -3,7 +3,6 @@ ignore-*
 .tmp
 .sass-cache
 
-app/dist/
 dist/
 
 bower_components/

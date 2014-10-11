@@ -3,8 +3,7 @@ ignore-*
 .tmp
 .sass-cache
 
-app/libs
-app/dist/
+bower_components
 
 .DS_Store
 .AppleDouble

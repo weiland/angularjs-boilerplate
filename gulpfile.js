@@ -10,6 +10,7 @@ var img = require('./gulp/img');
 var scss = require('./gulp/scss');
 var cp = require('./gulp/cp');
 var html = require('./gulp/html');
+var test = require('./gulp/test');
 
 gulp.task('server', server);
 gulp.task('clean', clean);
@@ -19,6 +20,8 @@ gulp.task('scss', scss);
 gulp.task('cp', cp);
 gulp.task('html', html);
 gulp.task('watchdoges', watchdoges);
+gulp.task('test', test);
+gulp.task('testserver', test.bind(this, true));
 
 gulp.task('build', [
 //  'clean', // cannot use it yet, cause it deltes the entire dire :(
@@ -37,3 +40,4 @@ gulp.task('default', [
   'html',
   'watchdoges'
 ]);
+

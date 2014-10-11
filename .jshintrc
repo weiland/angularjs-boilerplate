@@ -2,7 +2,7 @@
   "node": true,
   "jquery": false,
   "worker": false,
-  "browser": true,
+  "browser": false,
   "esnext": true,
   "bitwise": true,
   "camelcase": true,
@@ -29,6 +29,7 @@
   "debug": false,
   "globals" : {
     "define": true,
-    "exports": true
+    "exports": true,
+    "angular": true
   }
 }

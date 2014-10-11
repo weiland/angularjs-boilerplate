@@ -14,6 +14,25 @@ Angular.js Boilerplate is a simple frontend template to start a new angular webb
 - Alternatively, add the repository as parent/boilerplate remote
   `git init && git remote add boilerplate git@github.com:weiland/angularjs-boilerplate.git && git pull boilerplate master`
 
+## Structure
+- `app` main app directory (working dir)
+    + `img` place all application images here
+    + `js` main structure of the angular app here
+        * appModule.js
+        * appConfig.js
+        * appRoutes.js
+        * `components`
+        * `layout`
+        * `services`
+    + `scss` all styles as sassy css (CSS3, `.scss`)
+    + `static` favicon.ico, robots.txt, humans.txt, etc
+    + index.html (main app file)
+- `dist` build directory (same as app, but scss => css)
+- `gulp` all gulp tasks
+- `test` contains karma jasmine phantomjs tests (unit, midway, integration/e2e)
+- config.js
+- gulpfile.js
+- other project configurations files (.jshintrc, etc)
 
 ## Features
 
@@ -21,12 +40,15 @@ Angular.js Boilerplate is a simple frontend template to start a new angular webb
 * SCSS
 * Browsersync for development
 * Angularjs
+* Karma Jasmine Tests (via PhantomJS)
+
 
 ## Dependencies
+
 * node >=0.10.0
 * gulp
 * bower
-* phantomjs
+* phantomjs (`brew install phantomjs`)
 * karma (with jasmine)
 
 

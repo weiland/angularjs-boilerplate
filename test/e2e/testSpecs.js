@@ -5,9 +5,9 @@ describe('E2E: Testing Routes', function() {
     browser().navigateTo('/');
   });
 
-  it('should have a working /sub route', function() {
-    browser().navigateTo('#/sub');
-    expect(browser().location().path()).toBe('/sub');
+  it('should have a working /about route', function() {
+    browser().navigateTo('#/about');
+    expect(browser().location().path()).toBe('/about');
   });
 
 });

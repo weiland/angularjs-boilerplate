@@ -7,6 +7,11 @@
 
         vm.name = ENV.name;
 
+        vm.resolve = function() {
+          // add service with deferred content
+          return true;
+        };
+
         vm.food = 'cake';
 
     }

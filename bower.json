@@ -9,6 +9,8 @@
   "private": true,
   "ignore": [],
   "dependencies": {
-    "foundation": "zurb/bower-foundation#~5.4.6"
+    "foundation": "zurb/bower-foundation#~5.4.6",
+    "angular": "~1.2.26",
+    "angular-route": "~1.2.26"
   }
 }

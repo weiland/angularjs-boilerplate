@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var reload = require('gulp-livereload');
+var reload = require('browser-sync').reload;
 var uglify = require('gulp-uglify');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
@@ -11,5 +11,5 @@ module.exports = function() {
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
     .pipe(gulp.dest('app/dist/js'))
-    .pipe(reload(global.lrserver));
+    .pipe(reload({stream: true}));
 };

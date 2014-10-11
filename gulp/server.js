@@ -1,21 +1,24 @@
-var express = require('express');
-var tinylr = require('tiny-lr');
-var livereload  = require('connect-livereload');
+var browserSync = require('browser-sync');
 
 module.exports = function() {
-  var lrport = 35729;
-  var server = express();
 
-  global.lrserver = tinylr();
+  browserSync({
+    server: {
+      baseDir: 'app/dist/',
+      directory: true,
+      index: 'index.html',
+      routes: {
+        '/vendors': 'bower_components'
+      }
+    },
 
-  server.use(livereload({
-    port: lrport
-  }));
+    port: 4200,
 
-  server.use(express.static('app/dist'));
+    //proxy: 'local.dev', // either server or proxy
 
-  console.log('webserver on 4200, livereload on ', lrport);
+    browser: 'google chrome',
 
-  server.listen(4200);
-  global.lrserver.listen(lrport); // node global
+    logLevel: 'info', // we do not need to debug our dev server that much
+    logPrefix: 'AngularApp'
+  });
 };

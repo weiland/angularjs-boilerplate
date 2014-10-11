@@ -4,6 +4,7 @@ ignore-*
 .sass-cache
 
 app/dist/
+dist/
 
 bower_components/
 

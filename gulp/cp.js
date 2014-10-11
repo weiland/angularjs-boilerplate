@@ -4,7 +4,7 @@ var reload = require('browser-sync').reload;
 // copy vendors, fonts, static files (views, txt, icons)
 module.exports = function(){
 
-  gulp.src(['app/src/favicon.ico', 'app/src/robots.txt', 'app/src/humans.txt'])
-      .pipe(gulp.dest('app/dist'))
+  gulp.src(['app/static/favicon.ico', 'app/static/robots.txt', 'app/static/humans.txt'])
+      .pipe(gulp.dest('./dist'))
       .pipe(reload({stream:true}));
 };

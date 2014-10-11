@@ -4,9 +4,9 @@ module.exports = function() {
 
   browserSync({
     server: {
-      baseDir: 'app/dist/',
-      directory: true,
+      baseDir: './dist/',
       index: 'index.html',
+      directory: true,
       routes: {
         '/vendors': 'bower_components'
       }
@@ -14,7 +14,7 @@ module.exports = function() {
 
     port: 4200,
 
-    //proxy: 'local.dev', // either server or proxy
+    //proxy: 'local.dev', // either server or proxy (if we already run an express server)
 
     browser: 'google chrome',
 

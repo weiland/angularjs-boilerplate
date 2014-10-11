@@ -5,11 +5,11 @@ var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 
 module.exports = function() {
-  return gulp.src('app/src/js/**/*')
+  return gulp.src('app/js/**/*')
     .pipe(plumber())
-    .pipe(gulp.dest('app/dist/js'))
+    .pipe(gulp.dest('./dist/js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
-    .pipe(gulp.dest('app/dist/js'))
+    .pipe(gulp.dest('./dist/js'))
     .pipe(reload({stream: true}));
 };

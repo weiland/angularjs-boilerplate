@@ -2,10 +2,10 @@ var gulp = require('gulp');
 
 // Watchdoges...
 module.exports = function () {
-  gulp.watch('app/src/*.html', ['html']);
-  gulp.watch('app/src/scss/**/*.scss', ['scss']);
-  gulp.watch('app/src/**/*', ['js']);
-  gulp.watch('app/src/img/*', ['img']);
+  gulp.watch('app/*.html', ['html']);
+  gulp.watch('app/scss/**/*.scss', ['scss']);
+  gulp.watch('app/**/*', ['js']);
+  gulp.watch('app/img/*', ['img']);
 
   console.log([
     '░░░░░░░░░▄░░░░░░░░░░░░░░▄',

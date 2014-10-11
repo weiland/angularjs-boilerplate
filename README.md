@@ -12,7 +12,7 @@ Angular.js Boilerplate is a simple frontend template to start a new angular webb
 - Cd into it and run npm install and bower install 
   `cd angularjs-boilerplate && npm install && bower install`
 - Alternatively, add the repository as parent/boilerplate remote
-  `git init && git remote add boilerplate git@github.com:weiland/webapp-boilerplate.git && git pull boilerplate master`
+  `git init && git remote add boilerplate git@github.com:weiland/angularjs-boilerplate.git && git pull boilerplate master`
 
 
 ## Features

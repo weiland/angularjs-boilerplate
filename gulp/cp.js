@@ -11,4 +11,9 @@ module.exports = function(){
   gulp
     .src(['bower_components/angular/angular.js', 'bower_components/angular-route/angular-route.js'])
     .pipe(gulp.dest('./dist/js'));
+
+  // TODO due to avoid views folder, move this to the js task
+  gulp
+    .src('app/js/views/**/*')
+    .pipe( gulp.dest( './dist/js/views' ) );
 };

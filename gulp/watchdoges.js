@@ -4,7 +4,7 @@ var gulp = require('gulp');
 module.exports = function () {
   gulp.watch('app/*.html', ['html']);
   gulp.watch('app/scss/**/*.scss', ['scss']);
-  gulp.watch('app/**/*', ['js']);
+  gulp.watch('app/js/**/*', ['js']);
   gulp.watch('app/img/*', ['img']);
 
   console.log([

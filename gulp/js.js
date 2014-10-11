@@ -5,7 +5,7 @@ var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 
 module.exports = function() {
-  return gulp.src('app/js/**/*')
+  return gulp.src('app/js/**/*.js')
     .pipe(plumber())
     .pipe(gulp.dest('./dist/js'))
     .pipe(rename({ suffix: '.min' }))

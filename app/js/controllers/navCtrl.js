@@ -3,10 +3,10 @@
     function NavCtrl( ) {
 
         var vm = this;
-        vm.links = {
-            'home'  : '/home',
-            'about' : '/about'
-        };
+        vm.links = [
+            {name: 'home',  url: '/home'},
+            {name: 'about', url: '/about'}
+        ];
     }
 
     angular

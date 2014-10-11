@@ -1,15 +1,24 @@
-/* global SubCtrl:false, angular:false */
+/* global AboutCtrl:false, angular:false */
 (function() {
   'use strict';
 
   /* @ngInject */
   function Router( $routeProvider, $locationProvider, ENV ) {
     $routeProvider
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'SubCtrl as vm',
-        resolve: SubCtrl.resolve
+
+      .when('/home', {
+        templateUrl: 'js/views/home.html',
+        controller: 'HomeCtrl', // 'HomeCtrl as homo' works as well
+        controllerAs: 'vm'
       })
+
+      .when('/about', {
+        templateUrl: 'js/views/about.html',
+        controller: 'AboutCtrl', // 'AboutCtrl as about' works as well
+        controllerAs: 'vm'
+        //resolve: AboutCtrl.resolve
+      })
+
       .otherwise({
         redirectTo: 'home'
       });

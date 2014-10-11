@@ -6,7 +6,7 @@ module.exports = function() {
     server: {
       baseDir: './dist/',
       index: 'index.html',
-      directory: true,
+      //directory: true,
       routes: {
         '/vendors': 'bower_components'
       }

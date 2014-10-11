@@ -21,7 +21,9 @@
             $script('js/appModule.js', function() {
               $script([
                 'js/controllers/homeCtrl.js',
-                'js/controllers/aboutCtrl.js'
+                'js/controllers/aboutCtrl.js',
+                'js/filters/addHashFilter.js',
+                'js/directives/navDirective.js'
               ], function() {
                 angular.bootstrap(document.documentElement, ['app']);
               });
@@ -36,8 +38,9 @@
     <header class="content">
       <h1>Le App</h1>
     </header>
+    <nav></nav>
     <div class="content">
-    almost center
+      <ng-view></ng-view>
     </div>
     <script src="/js/app.js"></script>
     <script>

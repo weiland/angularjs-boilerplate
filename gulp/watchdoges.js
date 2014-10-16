@@ -6,6 +6,7 @@ module.exports = function () {
   gulp.watch('app/scss/**/*.scss', ['scss']);
   gulp.watch('app/js/**/*', ['js']);
   gulp.watch('app/img/*', ['img']);
+  gulp.watch('app/js/views/*', ['cp']);
 
   console.log([
     '░░░░░░░░░▄░░░░░░░░░░░░░░▄',

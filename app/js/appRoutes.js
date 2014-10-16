@@ -15,8 +15,8 @@
       .when('/about', {
         templateUrl: 'js/views/about.html',
         controller: 'AboutCtrl', // 'AboutCtrl as about' works as well
-        controllerAs: 'vm',
-        resolve: AboutCtrl.resolve
+        controllerAs: 'vm'
+        //,resolve: AboutCtrl.resolve
       })
 
       .otherwise({

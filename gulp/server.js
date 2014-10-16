@@ -8,7 +8,9 @@ module.exports = function() {
       index: 'index.html',
       //directory: true,
       routes: {
-        '/vendors': 'bower_components'
+        '/vendors': '../bower_components',
+        '/home': 'index.html',
+        '/about': 'index.html'
       }
     },
 

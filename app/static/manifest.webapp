@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
-  "name": "Simple Boilerplate",
+  "name": "Angular Boilerplate",
   "launch_path": "/index.html",
-  "description": "simple frontend html boilerplate",
+  "description": "angular frontend html boilerplate",
   "icons": {
     "128": "icon-128x128.png"
   },
   "developer": {
     "name": "Pascal Weiland",
-    "url": "https://github.com/weiland"
+    "url": "https://github.com/weiland/angular-boilerplate"
   },
   "installs_allowed_from": [
     "*"
@@ -18,8 +18,8 @@
   },
   "locales": {
     "en": {
-      "name": "Simple Boilerplate",
-      "description": "simple frontend html boilerplate"
+      "name": "Angular Boilerplate",
+      "description": "angular html boilerplate"
     }
   }
 }

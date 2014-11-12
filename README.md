@@ -1,6 +1,6 @@
 # Angular.js Boilerplate
 
-[![Build Status](https://travis-ci.org/weiland/angularjs-boilerplate.svg)](https://travis-ci.org/weiland/angularjs-boilerplate)
+[![Build Status](https://api.travis-ci.com/weiland/angularjs-boilerplate.svg?token=P5fDWx8xxBUeRNAjrTzK&branch=master)](https://travis-ci.org/weiland/angularjs-boilerplate)
 [![devDependency Status](https://david-dm.org/weiland/angularjs-boilerplate/dev-status.svg)](https://david-dm.org/weiland/angularjs-boilerplate#info=devDependencies)
 
 Angular.js Boilerplate is a simple frontend template to start a new angular webbapp.

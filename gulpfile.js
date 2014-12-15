@@ -1,30 +1,21 @@
 'use strict';
 
 var gulp = require('gulp');
-
-var server = require('./gulp/server');
-var watchdoges = require('./gulp/watchdoges');
-var clean = require('./gulp/clean');
-var js = require('./gulp/js');
-var img = require('./gulp/img');
-var scss = require('./gulp/scss');
-var cp = require('./gulp/cp');
-var html = require('./gulp/html');
 var test = require('./gulp/test');
 
-gulp.task('server', server);
-gulp.task('clean', clean);
-gulp.task('img', img);
-gulp.task('js', js);
-gulp.task('scss', scss);
-gulp.task('cp', cp);
-gulp.task('html', html);
-gulp.task('watchdoges', watchdoges);
+gulp.task('server', require('./gulp/server'));
+gulp.task('clean', require('./gulp/clean'));
+gulp.task('img', require('./gulp/img'));
+gulp.task('js', require('./gulp/js'));
+gulp.task('scss', require('./gulp/scss'));
+gulp.task('cp', require('./gulp/cp'));
+gulp.task('html', require('./gulp/html'));
+gulp.task('watchdoges', require('./gulp/watchdoges'));
 gulp.task('test', test);
-gulp.task('testserver', test.bind(this, true));
+gulp.task('testserver', test.bind(null, true));
 
 gulp.task('build', [
-//  'clean', // cannot use it yet, cause it deltes the entire dire :(
+//  'clean', // cannot be used yet, cause it deletes the entire dir :(
   'js',
   'cp',
   'scss',
